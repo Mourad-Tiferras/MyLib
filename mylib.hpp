@@ -1,5 +1,5 @@
-#ifndef MYLIB_H
-#define MYLIB_H
+#ifndef MYLIB_HPP
+#define MYLIB_HPP
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@
 
 
 char    *_itoa(int   num);
-char	*_substr(char *s, unsigned int start, size_t len);
+std::string _substr(const std::string& str, size_t start, size_t len);
 
 
 #endif

@@ -1,4 +1,4 @@
-#include "mylib.h"
+#include "mylib.hpp"
 
 
 static  int  _strlen(char *str)
@@ -98,3 +98,17 @@ char	*_itoa(int n)
 	result = fill_result(result, n, sign);
 	return (result);
 }
+
+
+// #include <iostream>
+
+// int		main(void)
+// {
+// 	int		num;
+
+// 	std:: cout << "Enter a num:  ";
+// 	std:: cin >> num;
+
+// 	std:: cout << "\n Itoa(" << num << ") == " << _itoa(num) << " from Int to ASCII string\n";
+// 	return 0;
+// }

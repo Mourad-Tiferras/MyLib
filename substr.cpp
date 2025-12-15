@@ -1,4 +1,4 @@
-#include "mylib.h"
+#include "mylib.hpp"
 
 static  unsigned int  _strlen(char *str)
 {
@@ -15,29 +15,44 @@ static  unsigned int  _strlen(char *str)
     return (count);
 }
 
-
-char	*_substr(char *s, unsigned int start, size_t len)
+std::string         _substr(const std::string& str, size_t start, size_t len)
 {
-    size_t      idx;
-    char        *result;
-    size_t      s_len = _strlen(s);
+    size_t          idx;
+    std::string     result;
+    size_t          s_len = _strlen(s);
 
     if ((s == NULL) || (start > (s_len)))
         return (NULL);
     if (len > s_len)
         len = s_len;
 
-    result = (char*) (malloc((sizeof(char) * (len + 1))));
+    result = (std::string) (malloc((sizeof(char) * (len + 1))));
     if (result == NULL)
         return NULL;
 
     idx = 0;
     while (start < len)
     {
-        result[idx] = s[start];
+        result[idx] = str[start];
         idx++;
         start++;
     }
     result[idx] = '\0';
     return result;
+}
+
+
+
+#include <iostream>
+
+int		main(void)
+{
+	int		num;
+
+	std:: string    str = "Hello l3alaam\n";
+
+	std:: cout << "Substr \"Hello l3alaam\\n\" " << _substr(str, 4, 8) << " from Int to ASCII string\n";
+
+    
+	return 0;
 }
