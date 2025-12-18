@@ -8,7 +8,7 @@
 
 
 char    *_itoa(int   num);
-std::string _substr(const std::string& str, size_t start, size_t len);
+std::string _substr(const std::string &str, size_t start, size_t len);
 
 
 #endif
