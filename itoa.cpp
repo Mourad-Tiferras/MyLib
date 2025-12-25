@@ -109,6 +109,11 @@ char	*_itoa(int n)
 // 	std:: cout << "Enter a num:  ";
 // 	std:: cin >> num;
 
-// 	std:: cout << "\n Itoa(" << num << ") == " << _itoa(num) << " from Int to ASCII string\n";
+// 	char	*n;
+// 	n = _itoa(num);
+
+// 	std:: cout << "\n Itoa(" << num << ") == " << n << " from Int to ASCII string\n";
+// 	free(n);
+
 // 	return 0;
 // }

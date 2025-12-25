@@ -1,12 +1,19 @@
 #include "mylib.hpp"
 
-
+/**
+ * _substr - Extracts a substring from a string
+ * @str: Original string
+ * @start: Starting index
+ * @len: Number of characters to extract
+ *
+ * Return: Extracted substring
+*/
 std::string _substr(const std::string &str, size_t start, size_t len)
 {
     size_t s_len = str.length();
 
     if (start >= s_len)
-        return "";
+        return (NULL);
 
     if (start + len > s_len)
         len = s_len - start;
