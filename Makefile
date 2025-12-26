@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++17
+CXXFLAGS = -Wall -Wextra -Werror
 LIBNAME = libmylib.a
 SRCS = itoa.cpp join.cpp rev_rot13.cpp rev_rot14.cpp rot13.cpp rot14.cpp split.cpp strtrim.cpp substr.cpp
 OBJS = $(SRCS:.cpp=.o)
@@ -12,11 +12,10 @@ $(LIBNAME): $(OBJS)
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-fclean:
+clean:
 	rm $(OBJS)
 
-clean:
-	rm $(OBJS) $(LIBNAME)
+fclean: clean
+	rm $(LIBNAME)
 
-re: clean all
-
+re: fclean all
