@@ -81,6 +81,14 @@ static char	**fill(char const *s, char sep, char **result)
 	return (result);
 }
 
+
+/**
+ * _split - Splits a string by a delimiter into char**
+ * @s: String to split
+ * @c: Delimiter character
+ *
+ * Return: char** as a 2D array of splited string s
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
@@ -111,7 +119,12 @@ char	**ft_split(char const *s, char c)
 //  		printf("\n");
 //  	}
 //  	printf("\nTest count words; %lu\n", count_words("hello! Word2 Word3", ' '));
-// 	free(res[0]);
-// 	free(res);
+// 	c = 0;
+// 	while (c < count_words("hello! Word2 Word3", ' '))
+//     {
+//         free(res[c]);
+//         c++;
+//     }
+//     free(res);
 //  	return (0);
 //  }
