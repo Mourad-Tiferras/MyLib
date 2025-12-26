@@ -1,21 +1,6 @@
 #include "mylib.hpp"
 
 
-static  int  _strlen(char *str)
-{
-    int     idx;
-    int     count;
-
-    idx = 0;
-    count = 0;
-    while (*(str + idx) != '\0')
-    {
-        count++;
-        idx++;
-    }
-    return (count);
-}
-
 static	int	itoa_count_size(int num, int sign)
 {
 	int	count;
