@@ -26,6 +26,6 @@ std::string _ROT13(const std::string &str)
 // int     main(void)
 // {
 //     std::string     str = "ABCDEF123";
-//     std::cout << "The Rot13 of " << str << _ROT13(str) << "\n";
+//     std::cout << "The Rot13 of " << str << " is " << _ROT13(str) << "\n";
 //     return 0;
 // }
