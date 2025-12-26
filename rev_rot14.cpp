@@ -1,12 +1,12 @@
 #include "mylib.hpp"
 
 /**
- * _ROT14 - Encrypts a string using ROT14 cipher
- * @str: Input string
+ * _rev_ROT14 - Decrypts a ROT14 encrypted string
+ * @str: ROT14 encrypted string
  *
- * Return: ROT14 encrypted string
+ * Return: Decrypted ASCII string
  */
-std::string _ROT14(const std::string& str)
+std::string _rev_ROT14(const std::string &str)
 {
     std::string res = str;
     size_t i = 0;
@@ -35,10 +35,9 @@ std::string _ROT14(const std::string& str)
 
 // #include <iostream>
 
-// int     main(void)
+// int main(void)
 // {
-//     std::string str = "ABCDabcd12345678";
-
-//     std:: cout << "The Rot14 of " << str << " is " << _ROT14(str) << "\n";
+//     std::string     str = "OPQRopqr12345678";
+//     std::cout << "The reverse ROT14 of the str OPQRopqr12345678 is " << _rev_ROT14(str) << "\n";
 //     return 0;
 // }
