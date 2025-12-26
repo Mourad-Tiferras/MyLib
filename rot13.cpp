@@ -1,5 +1,12 @@
 #include "mylib.hpp"
 
+
+/**
+ * _ROT13 - Encrypts a string using ROT13 cipher
+ * @str: Input string
+ *
+ * Return: ROT13 encrypted string
+*/
 std::string _ROT13(const std::string &str)
 {
     std::string res = str;
