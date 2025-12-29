@@ -1,10 +1,11 @@
 #include "mylib.hpp"
 
+
 /**
  * _leet - Converts a string to leet speak
  * @str: Input string
  *
- * Return: Leet-converted string
+ * Return: Leet (1337 5p34k) converted ASCII string
  */
 std::string _leet(const std::string &str)
 {
