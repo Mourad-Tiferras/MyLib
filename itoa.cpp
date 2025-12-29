@@ -60,6 +60,14 @@ static char	*fill_result(char *result, int n, int sign)
 	return (result);
 }
 
+
+/**
+ * _itoa - converts an integer to a string
+ * @n: integer to be converted
+ *
+ * Return: pointer to a null-terminated string representing the integer,
+ *         or NULL if memory allocation fails
+*/
 char	*_itoa(int n)
 {
 	int		sign;

@@ -83,7 +83,7 @@ static char	**fill(char const *s, char sep, char **result)
 
 
 /**
- * _split - Splits a string by a delimiter into char**
+ * ft_split - Splits a string by a delimiter into char**
  * @s: String to split
  * @c: Delimiter character
  *

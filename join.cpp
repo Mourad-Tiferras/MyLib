@@ -1,12 +1,13 @@
 #include "mylib.hpp"
 
+
 /**
- * _strjoin - Concatenates two strings into a new string
- * @s1: First string
- * @s2: Second string
+ * _strjoin - concatenates two strings
+ * @s1: first string
+ * @s2: second string
  *
- * Return: Concatenated string
- */
+ * Return: a new string containing s1 followed by s2
+*/
 std::string _strjoin(const std::string &s1, const std::string &s2)
 {
     std::string    result;
