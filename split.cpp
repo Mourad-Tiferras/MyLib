@@ -83,13 +83,13 @@ static char	**fill(char const *s, char sep, char **result)
 
 
 /**
- * ft_split - Splits a string by a delimiter into char**
+ * _split - Splits a string by a delimiter into char**
  * @s: String to split
  * @c: Delimiter character
  *
  * Return: char** as a 2D array of splited string s
  */
-char	**ft_split(char const *s, char c)
+char	**_split(char const *s, char c)
 {
 	char	**result;
 
@@ -110,7 +110,7 @@ char	**ft_split(char const *s, char c)
 //  	char **res;
 // 	size_t c = 0;
 
-//  	res = ft_split("hello! Word2 Word3", ' ');
+//  	res = _split("hello! Word2 Word3", ' ');
 
 //  	while (c < count_words("hello! Word2 Word3", ' '))
 //  	{
