@@ -52,6 +52,10 @@ With MyLib, developers can **save time, improve code organization**, and **reuse
 git clone https://github.com/Mourad-Tiferras/MyLib.git
 ```
 
+```
+cd MyLib
+```
+
 ### Step 2:
 for Unix like system users:
 
