@@ -43,8 +43,33 @@ With MyLib, developers can **save time, improve code organization**, and **reuse
 | `_substr` | Extracts a substring from a given string. |
 
 
-## Example Usage
+# Example Usage
 
+## Setting-up MyLib:
+
+### Step 1: Cloning Repo
+```
+git clone https://github.com/Mourad-Tiferras/MyLib.git
+```
+
+### Step 2:
+for Unix like system users:
+```
+make
+```
+
+For Windows users:
+
+```
+cl /c /EHsc itoa.cpp join.cpp rev_rot13.cpp rev_rot14.cpp rot13.cpp rot14.cpp split.cpp strtrim.cpp substr.cpp leet.cpp
+
+```
+
+```
+lib /OUT:mylib.lib *.obj
+```
+
+### Example:  tests/main.cpp
 ```cpp
 #include <iostream>
 #include "../mylib.hpp"
@@ -81,8 +106,8 @@ int     main(void)
     return 0;
 ```
 
-# Compilation:
+## Compilation:
 ![Compilation](./src/Screenshot%20at%202025-12-31%2012-11-28.png)
 
-# Memory Leaks Check with Valgrind:
+## Memory Leaks Check with Valgrind:
 ![Valgrind](./src/Screenshot%20at%202025-12-31%2012-12-00.png)
