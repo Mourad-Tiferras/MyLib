@@ -48,28 +48,26 @@ With MyLib, developers can **save time, improve code organization**, and **reuse
 ## Setting-up MyLib:
 
 ### Step 1: Cloning Repo
-```
+```bash
 git clone https://github.com/Mourad-Tiferras/MyLib.git
 ```
 
 ### Step 2:
 for Unix like system users:
-```
+
+```bash
 make
 ```
 
-For Windows users:
+For Windows users with g++ compiler (MinGW/GCC):
+
+```bach
+g++ -c *.cpp && ar rcs mylib.lib *.o
 
 ```
-cl /c /EHsc itoa.cpp join.cpp rev_rot13.cpp rev_rot14.cpp rot13.cpp rot14.cpp split.cpp strtrim.cpp substr.cpp leet.cpp
 
-```
 
-```
-lib /OUT:mylib.lib *.obj
-```
-
-### Example:  tests/main.cpp
+## Example:  tests/main.cpp
 ```cpp
 #include <iostream>
 #include "../mylib.hpp"
