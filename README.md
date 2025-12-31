@@ -40,15 +40,38 @@ With MyLib, developers can **save time, improve code organization**, and **reuse
 ## Example Usage
 
 ```cpp
-#include "mylib.hpp"
+#include <iostream>
+#include "../mylib.hpp"
+#include <cstdio>
 
-int main() {
-    std::string str = "  Hello World!  ";
-    std::string trimmed = _strtrim(str, " ");
-    std::cout << "Trimmed: '" << trimmed << "'" << std::endl;
+int     main(void)
+{
+    std::string     str = "ABCD123";
 
-    std::string rot = _ROT13("Hello");
-    std::cout << "ROT13: " << rot << std::endl;
+    std::cout << "The ROT14 of the " << str << " is " << _ROT14(str) << "\n";
 
+
+
+    const char*   str2 = "Hello L3alaam 123 abc";
+    int     row = 0;
+
+    printf("\nThe str to Split is \"%s\"  \n ", str2);
+
+    char **result = _split(str2, ' ');
+
+    while (result[row] != NULL)
+    {
+      printf("In row %d  =  %s\n", row, result[row]);
+      row++;
+    }
+
+    while (row >= 0)
+    {
+      free(result[row]);
+      row--;
+    }
+
+    free(result);
     return 0;
 }
+```
