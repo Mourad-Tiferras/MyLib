@@ -73,5 +73,10 @@ int     main(void)
 
     free(result);
     return 0;
-}
 ```
+
+# Compilation:
+![Compilation](./src/Screenshot%20at%202025-12-31%2012-11-28.png)
+
+# Memory Leaks Check with Valgrind:
+![Valgrind](./src/Screenshot%20at%202025-12-31%2012-12-00.png)
